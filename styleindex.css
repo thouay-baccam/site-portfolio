@@ -76,6 +76,26 @@ body {
     color:white;
 }
 
+.name-text {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: white;
+    z-index: 2; /* Pour s'assurer que le texte est au-dessus de la vidéo de fond */
+  }
+
+  .text-page {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    width:950px;
+    color: white;
+    z-index: 2; /* Pour s'assurer que le texte est au-dessus de la vidéo de fond */
+    text-align:center;
+  }
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
