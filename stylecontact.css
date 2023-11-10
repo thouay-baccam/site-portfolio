@@ -76,6 +76,40 @@ body {
     color:white;
 }
 
+
+.links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .links a {
+    margin: 10px; /* Ajustez cette valeur pour contrôler l'espace entre les liens */
+    text-decoration: none;
+    color: #000; /* Couleur du texte, modifiez selon vos préférences */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 50px; /* Ajustez cette valeur pour contrôler l'espace entre les images */
+  }
+  
+  
+  .links img {
+    width: 100px; /* Taille de l'icône, ajustez-la selon vos besoins */
+    height: 100px;
+    margin-bottom: 5px; /* Espace entre l'image et le texte */
+  }
+  
+  .links span {
+    display: block;
+  }
+  
+  
 @media screen and (max-height: 450px) {
     .sidebar {
         padding-top: 15px;
