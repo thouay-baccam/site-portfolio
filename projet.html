@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styleprojet.css">
+  <link rel="stylesheet" href="sidebar.css">
   <title>Index de Thouay - Projets</title>
 </head>
 
@@ -17,54 +18,58 @@
     <div class="overlay"></div>
   </div>
 
-  <div class="sidebar">
-    <a href="index.html" title="Accueil">
-        <img src="icones/home-icon.png" alt="Home Icon">
-        <span>Accueil</span>
+  <div class="main-wrap">
+    <input id="slide-sidebar" type="checkbox" role="button" />
+    <label for="slide-sidebar">
+      <img src="icones/hambergurmenu.png" alt="Close Icon">
+    </label>
+    <div class="sidebar">
+      <h1>THOUAY</h1>
+      <h1>BACCAM</h1>
+      <a href="index.html">
+        <img class="sidebar-image" src="icones/home-icon.png" alt="Image 1">
       </a>
-      <a href="projet.html" title="Projet">
-        <img src="icones/code-icon.png" alt="Icone Projet">
-        <span>Projets</span>
+      <a href="projet.html">
+        <img class="sidebar-image" src="icones/code-icon.png" alt="Image 2">
       </a>
-      <a href="portfolio.html" title="Portfolio">
-        <img src="icones/portfolio-icon.png" alt="Icone Portfolio">
-        <span>Portfolio</span>
+      <a href="portfolio.html">
+        <img class="sidebar-image" src="icones/portfolio-icon.png" alt="Image 3">
       </a>
-      <a href="contact.html" title="Contact">
-        <img src="icones/contact-icon.png" alt="Contact Icon">
-        <span>Contact</span>
+      <a href="contact.html">
+        <img class="sidebar-image" src="icones/contact-icon.png" alt="Image 4 ">
       </a>
-      
-  </div>
+    </div>
 
-  <div class="name-text">THOUAY BACCAM</div>
+    <div class="projects-container">
+      <div class="project-section">
+        <h2>CV HTML/CSS</h2>
+        <a href="CV/cv.html" target="_blank">
+          <img src="images/previewcv.png" alt="Project 1 Screenshot">
+        </a>
+      </div>
 
-  <div class="project-section">
-    <h2>CV HTML/CSS</h2>
-    <a href="CV/cv.html" target="_blank">
-      <img src="images/previewcv.png" alt="Project 1 Screenshot">
-    </a>
-  </div>
+      <div class="project-section">
+        <h2>Bloom Petals</h2>
+        <a href="bloomPetals/index.html" target="_blank">
+          <img src="images/previewbloom.png" alt="Project 2 Screenshot">
+        </a>
+      </div>
 
-  <div class="project-section">
-    <h2>Bloom Petals</h2>
-    <a href="bloomPetals/index.html" target="_blank">
-      <img src="images/previewbloom.png" alt="Project 2 Screenshot">
-    </a>
-  </div>
-  
-  <div class="project-section">
-    <h2>Fan Site</h2>
-    <a href="fansite/accueil.html" target="_blank">
-      <img src="images/previewtyler.png" alt="Project 3 Screenshot">
-    </a>
-  </div>
-  
-  <div class="project-section">
-    <h2>Ville Marseille</h2>
-    <a href="ville-marseille/marseille.html" target="_blank">
-      <img src="images/previewmarseille.png" alt="Project 4 Screenshot">
-    </a>
+      <div class="project-section">
+        <h2>Fan Site</h2>
+        <a href="fansite/accueil.html" target="_blank">
+          <img src="images/previewtyler.png" alt="Project 3 Screenshot">
+        </a>
+      </div>
+
+      <div class="project-section">
+        <h2>Ville Marseille</h2>
+        <a href="ville-marseille/marseille.html" target="_blank">
+          <img src="images/previewmarseille.png" alt="Project 4 Screenshot">
+        </a>
+      </div>
+    </div>
   </div>
 </body>
+
 </html>

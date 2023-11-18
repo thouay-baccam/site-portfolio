@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -6,6 +6,7 @@
   <meta name="description" content="Site Web de Thouay Baccam">
   <meta name="keywords" content="Étudiant IT, Portfolio, Projets académiques, Développement web, Codage, Réseaux, La Plateforme, HTML, CSS, JavaScript, Projets en cours, IT School, La Plateforme IT">
   <link rel="stylesheet" href="styleindex.css">
+  <link rel="stylesheet" href="sidebar.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Index de Thouay - Accueil</title>
 </head>
@@ -19,27 +20,28 @@
     <div class="overlay"></div>
   </div>
 
-  <div class="sidebar">
-    <a href="index.html" title="Accueil">
-        <img src="icones/home-icon.png" alt="Home Icon">
-        <span>Accueil</span>
+  <div class="main-wrap">
+    <input id="slide-sidebar" type="checkbox" role="button" />
+    <label for="slide-sidebar">
+      <img src="icones/hambergurmenu.png" alt="Close Icon">
+    </label>
+    <div class="sidebar">
+      <h1>THOUAY</h1>
+      <h1>BACCAM</h1>
+      <a href="index.html">
+        <img class="sidebar-image" src="icones/home-icon.png" alt="Image 1">
       </a>
-      <a href="projet.html" title="Projet">
-        <img src="icones/code-icon.png" alt="Icone Projet">
-        <span>Projets</span>
+      <a href="projet.html">
+        <img class="sidebar-image" src="icones/code-icon.png" alt="Image 2">
       </a>
-      <a href="portfolio.html" title="Portfolio">
-        <img src="icones/portfolio-icon.png" alt="Icone Portfolio">
-        <span>Portfolio</span>
+      <a href="portfolio.html">
+        <img class="sidebar-image" src="icones/portfolio-icon.png" alt="Image 3">
       </a>
-      <a href="contact.html" title="Contact">
-        <img src="icones/contact-icon.png" alt="Contact Icon">
-        <span>Contact</span>
+      <a href="contact.html">
+        <img class="sidebar-image" src="icones/contact-icon.png" alt="Image 4 ">
       </a>
-      
-  </div>
+    </div>
 
-  <div class="name-text">THOUAY BACCAM</div>
   
   <div class="text-page">
     Bienvenue sur ma page !<br><br> Découvrez ici mes projets en développement web et bien d'autres choses. <br>Si vous avez des suggestions pour améliorer le site, n'hésitez pas à m'embêter en salle co-working !

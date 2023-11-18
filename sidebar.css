@@ -1,0 +1,85 @@
+.body {
+
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+
+}
+
+.sidebar {
+    background-color: rgba(0, 0, 0, 0.429);
+    width: 150px;
+    max-height: 100vh;
+    overflow-y: auto;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    bottom: 0;
+    transition: transform 0.5s ease;
+    text-align: center;
+}
+
+.sidebar a {
+    display: block;
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.sidebar-image {
+    max-width: 50%;
+    /* Ajustez la largeur maximale de l'image */
+    height: auto;
+    /* Permet à la hauteur de s'ajuster proportionnellement */
+    margin: 0 auto;
+    /* Centre les images horizontalement */
+}
+
+.sidebar h1 {
+    color: white;
+    font-size: 25px;
+}
+
+.portfolio {
+    background-image: url(bg/sky.mp4);
+    position: absolute;
+    top: 0;
+    left: 150px;
+    right: 0;
+    bottom: 0;
+
+    -moz-transition: left 0.5s ease;
+    transition: left 0.5s ease;
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+input:checked~.portfolio {
+    left: 0;
+}
+
+input:checked~.sidebar {
+    transform: translateX(150px);
+    /* Ajoutez cette ligne */
+}
+
+label {
+    z-index: 2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* Modifiez cette valeur */
+    transition: transform 0.5s ease;
+    /* Ajoutez cette ligne */
+}
+
+input:checked~label {
+    transform: translateX(150px);
+    /* Ajoutez cette ligne */
+}
+
+label img {
+    width: 35px;
+    /* Ajustez la largeur selon vos besoins */
+    height: 35px;
+    /* Ajustez la hauteur selon vos besoins */
+}

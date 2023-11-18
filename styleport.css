@@ -37,45 +37,6 @@ body {
     /* Ajustez l'opacité de l'overlay selon vos préférences */
 }
 
-.sidebar {
-    height: 100%;
-    width: 80px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: rgba(0, 0, 0, 0.438);
-    overflow-x: hidden;
-    padding-top: 16px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.sidebar a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    color: rgb(0, 0, 0);
-    transition: background-color 0.3s;
-    position: relative;
-}
-
-.sidebar a:hover {
-    background-color: #333;
-}
-
-.sidebar img {
-    width: 50px;
-}
-
-.sidebar span{
-    color:white;
-}
-
 .soon-text {
     position: fixed;
     top: 50%;
